@@ -2,5 +2,5 @@ package people;
 
 public interface ILearner {
 
-    void learn(double numberofhours);
+    double learn(double numberofhours);
 }

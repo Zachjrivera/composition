@@ -20,15 +20,16 @@ public class People {
 
 
 
-    public void findID(long id) {
+    public Person findID(long id) {
 
         for (Person p: personList) {
             if (p.getId() == id ){
-                System.out.println(p);
+                return p;
+
             }
         }
 
-
+        return null;
     }
 
     public void remove (Person person){

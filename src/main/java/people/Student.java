@@ -8,10 +8,10 @@ public class Student extends Person implements ILearner {
         super(id);
     }
 
-    public void learn(double numberofhours) {
+    public double learn(double numberofhours) {
 
         this.totalStudytime += numberofhours;
-
+        return totalStudytime;
     }
 
     public double getTotalStudytime (){
@@ -21,4 +21,7 @@ public class Student extends Person implements ILearner {
     public void setTotalStudytime(double totalStudytime) {
         this.totalStudytime = totalStudytime;
     }
+
+
+
 }
